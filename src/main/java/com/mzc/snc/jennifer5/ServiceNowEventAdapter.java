@@ -15,6 +15,7 @@ import org.json.JSONObject;
 import com.aries.extension.data.EventData;
 import com.aries.extension.handler.EventHandler;
 import com.aries.extension.util.PropertyUtil;
+//import com.aries.view.extension.data.InstanceInfo;
 
 public class ServiceNowEventAdapter implements EventHandler{
     private String tokenFile;
@@ -56,7 +57,8 @@ public class ServiceNowEventAdapter implements EventHandler{
         try{
             String cToken = getToken(tokenFile);
 
-            String cmpURL = "http://"+ conUrl + "/api/v1/log-proc/log";
+            //String cmpURL = "http://"+ conUrl + "/api/v1/log-proc/log";
+            String cmpURL = "http://"+ conUrl + "/api/mid/em/jsonv2";
             URL smsUrl = new URL(cmpURL);
             hCon = (HttpURLConnection)smsUrl.openConnection();
             hCon.setRequestMethod("POST");
@@ -112,7 +114,7 @@ public class ServiceNowEventAdapter implements EventHandler{
                         .append(ev.instanceName).toString();
             }
             jsob.put("systemType", "APM");
-            jsob.put("severityLevel", chageCode(ev.eventLevel));
+            jsob.put("severityLevel", changeCode(ev.eventLevel));
             jsob.put("eventDt",getEventTime(ev.time));
             jsob.put("messages", apmMessage);
             jsob.put("targetName",ev.instanceName);
@@ -184,14 +186,14 @@ public class ServiceNowEventAdapter implements EventHandler{
         return t;
     }
 
-    public String chageCode(String eventLevel){
+    public String changeCode(String eventLevel){
         String eventCode = "";
         switch (eventLevel){
-            case "FATAL" : eventCode = "2";
+            case "FATAL" : eventCode = "1";
                 break;
             case "WARNING" : eventCode = "4";
                 break;
-            case "NORMAL" : eventCode = "6";
+            case "NORMAL" : eventCode = "0";
                 break;
         }
         return eventCode;

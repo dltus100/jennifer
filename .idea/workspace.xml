@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbd77ad-a74f-4168-835f-794f6f555555" name="Changes" comment="adapter tutorial add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mzc/snc/jennifer5/ServiceNowEventAdapter.java" afterDir="false" />
+    <list default="true" id="6fbd77ad-a74f-4168-835f-794f6f555555" name="Changes" comment="sample code add">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20220924.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aries_extension_1_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aries_extension_1_5_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jennifer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jennifer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mzc/EventAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mzc/EventAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mzc/snc/jennifer5/ServiceNowEventAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mzc/snc/jennifer5/ServiceNowEventAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669809348602</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sample code add">
+      <created>1669812840193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669812840193</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +137,7 @@
     <MESSAGE value="jennifer dependency add" />
     <MESSAGE value="jennifer dependency add 2" />
     <MESSAGE value="adapter tutorial add" />
-    <option name="LAST_COMMIT_MESSAGE" value="adapter tutorial add" />
+    <MESSAGE value="sample code add" />
+    <option name="LAST_COMMIT_MESSAGE" value="sample code add" />
   </component>
 </project>
